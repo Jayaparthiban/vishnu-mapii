@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7c6c7;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      color: #ff4081;
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you all the best on your special day 🎉</p>
+    <button id="clickButton">Click for a Surprise</button>
+    <div id="message" style="margin-top: 20px;"></div>
+  </div>
+
+  <script>
+    document.getElementById('clickButton').addEventListener('click', function() {
+      document.getElementById('message').innerHTML = '<h2>🎂🎉🎈 Have an Amazing Year Ahead! 🎈🎉🎂</h2>';
+    });
+  </script>
+
+</body>
+</html>
